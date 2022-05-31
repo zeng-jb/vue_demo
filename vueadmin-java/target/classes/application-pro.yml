@@ -1,0 +1,25 @@
+server:
+  port: 8081
+# DataSource Config
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/vueadmin?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: root
+    password: Zeng19980715**
+
+  security:
+    user:
+      name: user
+      password: 111111
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**Mapper.xml
+
+
+zeng:
+  jwt:
+    header: Authorization
+    expire: 64800     #7tian miao
+    secret: dshfishfoidhnnosd156456dsdfds45e
+
